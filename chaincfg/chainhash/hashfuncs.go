@@ -5,52 +5,32 @@
 
 package chainhash
 
-
 import (
-	"github.com/ProjectVisor/xvrd/keccak"
+	"golang.org/x/crypto/sha3"
 )
 
 // HashB calculates hash(b) and returns the resulting bytes.
 func HashB(b []byte) []byte {
 
-
-
-
-	h := keccak.New256()
-	h.Write(b)
-	hash := h.Sum(nil)
-
+	hash := sha3.Sum256(b)
 	return hash[:]
 }
 
 // HashH calculates hash(b) and returns the resulting bytes as a Hash.
 func HashH(b []byte) Hash {
-	h := keccak.New256()
-	h.Write(b)
-	return Hash(h.Sum(nil))
+	return Hash(sha3.Sum256(b))
 }
 
 // DoubleHashB calculates hash(hash(b)) and returns the resulting bytes.
 func DoubleHashB(b []byte) []byte {
-
-	h := keccak.New256()
-	h.Write(b)
-	first := h.Sum(nil)
-
-	h := keccak.New256()
-	h.Write(first[:])
-	second := h.Sum(nil)
+	first := sha3.Sum256(b)
+	second := sha3.Sum256(first[:])
 	return second[:]
 }
 
 // DoubleHashH calculates hash(hash(b)) and returns the resulting bytes as a
 // Hash.
 func DoubleHashH(b []byte) Hash {
-
-	h := keccak.New256()
-	h.Write(b)
-	first := h.Sum(nil)
-	h := keccak.New256()
-	h.Write(first[:])
-	return Hash(h.Sum(nil))
+	first := sha3.Sum256(b)
+	return Hash(sha3.Sum256(first[:]))
 }
