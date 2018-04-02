@@ -69,7 +69,7 @@ details on how to install on the supported operating systems.
 
 **2.1.1 Windows Installation**<br />
 
-* Install the MSI available at: https://github.com/btcsuite/btcd/releases
+* Install the MSI available at: github.com/ProjectVisor/xvrd/releases
 * Launch btcd from the Start Menu
 
 <a name="PosixInstallation" />
@@ -96,7 +96,7 @@ recommended that `GOPATH` is set to a directory in your home directory such as
 
 ```bash
 $ go get -u github.com/Masterminds/glide
-$ git clone https://github.com/btcsuite/btcd $GOPATH/src/github.com/btcsuite/btcd
+$ git clone github.com/ProjectVisor/xvrd $GOPATH/src/github.com/btcsuite/btcd
 $ cd $GOPATH/src/github.com/btcsuite/btcd
 $ glide install
 $ go install . ./cmd/...
@@ -213,16 +213,16 @@ configuration necessary, however, there is an optional method to use a
 
 **3.1.1 bootstrap.dat**
 
-* [Using bootstrap.dat](https://github.com/btcsuite/btcd/tree/master/docs/using_bootstrap_dat.md)
+* [Using bootstrap.dat](github.com/ProjectVisor/xvrd/tree/master/docs/using_bootstrap_dat.md)
 
 <a name="NetworkConfig" />
 
 **3.1.2 Network Configuration**
 
-* [What Ports Are Used by Default?](https://github.com/btcsuite/btcd/tree/master/docs/default_ports.md)
-* [How To Listen on Specific Interfaces](https://github.com/btcsuite/btcd/tree/master/docs/configure_peer_server_listen_interfaces.md)
-* [How To Configure RPC Server to Listen on Specific Interfaces](https://github.com/btcsuite/btcd/tree/master/docs/configure_rpc_server_listen_interfaces.md)
-* [Configuring btcd with Tor](https://github.com/btcsuite/btcd/tree/master/docs/configuring_tor.md)
+* [What Ports Are Used by Default?](github.com/ProjectVisor/xvrd/tree/master/docs/default_ports.md)
+* [How To Listen on Specific Interfaces](github.com/ProjectVisor/xvrd/tree/master/docs/configure_peer_server_listen_interfaces.md)
+* [How To Configure RPC Server to Listen on Specific Interfaces](github.com/ProjectVisor/xvrd/tree/master/docs/configure_rpc_server_listen_interfaces.md)
+* [Configuring btcd with Tor](github.com/ProjectVisor/xvrd/tree/master/docs/configuring_tor.md)
 
 <a name="Wallet" />
 
@@ -258,42 +258,42 @@ information.
 
 <a name="ContributionGuidelines" />
 
-* [Code Contribution Guidelines](https://github.com/btcsuite/btcd/tree/master/docs/code_contribution_guidelines.md)
+* [Code Contribution Guidelines](github.com/ProjectVisor/xvrd/tree/master/docs/code_contribution_guidelines.md)
 
 <a name="JSONRPCReference" />
 
-* [JSON-RPC Reference](https://github.com/btcsuite/btcd/tree/master/docs/json_rpc_api.md)
-    * [RPC Examples](https://github.com/btcsuite/btcd/tree/master/docs/json_rpc_api.md#ExampleCode)
+* [JSON-RPC Reference](github.com/ProjectVisor/xvrd/tree/master/docs/json_rpc_api.md)
+    * [RPC Examples](github.com/ProjectVisor/xvrd/tree/master/docs/json_rpc_api.md#ExampleCode)
 
 <a name="GoPackages" />
 
 * The btcsuite Bitcoin-related Go Packages:
-    * [btcrpcclient](https://github.com/btcsuite/btcd/tree/master/rpcclient) - Implements a
+    * [btcrpcclient](github.com/ProjectVisor/xvrd/tree/master/rpcclient) - Implements a
       robust and easy to use Websocket-enabled Bitcoin JSON-RPC client
-    * [btcjson](https://github.com/btcsuite/btcd/tree/master/btcjson) - Provides an extensive API
+    * [btcjson](github.com/ProjectVisor/xvrd/tree/master/btcjson) - Provides an extensive API
       for the underlying JSON-RPC command and return values
-    * [wire](https://github.com/btcsuite/btcd/tree/master/wire) - Implements the
+    * [wire](github.com/ProjectVisor/xvrd/tree/master/wire) - Implements the
       Bitcoin wire protocol
-    * [peer](https://github.com/btcsuite/btcd/tree/master/peer) -
+    * [peer](github.com/ProjectVisor/xvrd/tree/master/peer) -
       Provides a common base for creating and managing Bitcoin network peers.
-    * [blockchain](https://github.com/btcsuite/btcd/tree/master/blockchain) -
+    * [blockchain](github.com/ProjectVisor/xvrd/tree/master/blockchain) -
       Implements Bitcoin block handling and chain selection rules
-    * [blockchain/fullblocktests](https://github.com/btcsuite/btcd/tree/master/blockchain/fullblocktests) -
+    * [blockchain/fullblocktests](github.com/ProjectVisor/xvrd/tree/master/blockchain/fullblocktests) -
       Provides a set of block tests for testing the consensus validation rules
-    * [txscript](https://github.com/btcsuite/btcd/tree/master/txscript) -
+    * [txscript](github.com/ProjectVisor/xvrd/tree/master/txscript) -
       Implements the Bitcoin transaction scripting language
-    * [btcec](https://github.com/btcsuite/btcd/tree/master/btcec) - Implements
+    * [btcec](github.com/ProjectVisor/xvrd/tree/master/btcec) - Implements
       support for the elliptic curve cryptographic functions needed for the
       Bitcoin scripts
-    * [database](https://github.com/btcsuite/btcd/tree/master/database) -
+    * [database](github.com/ProjectVisor/xvrd/tree/master/database) -
       Provides a database interface for the Bitcoin block chain
-    * [mempool](https://github.com/btcsuite/btcd/tree/master/mempool) -
+    * [mempool](github.com/ProjectVisor/xvrd/tree/master/mempool) -
       Package mempool provides a policy-enforced pool of unmined bitcoin
       transactions.
     * [btcutil](https://github.com/btcsuite/btcutil) - Provides Bitcoin-specific
       convenience functions and types
-    * [chainhash](https://github.com/btcsuite/btcd/tree/master/chaincfg/chainhash) -
+    * [chainhash](github.com/ProjectVisor/xvrd/tree/master/chaincfg/chainhash) -
       Provides a generic hash type and associated functions that allows the
       specific hash algorithm to be abstracted.
-    * [connmgr](https://github.com/btcsuite/btcd/tree/master/connmgr) -
+    * [connmgr](github.com/ProjectVisor/xvrd/tree/master/connmgr) -
       Package connmgr implements a generic Bitcoin network connection manager.
