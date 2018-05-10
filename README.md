@@ -41,7 +41,7 @@ which are both under active development.
 
 #### Windows - MSI Available
 
-https://github.com/ProjectVisor/xvrd/releases
+https://github.com/RaysNetwork/Rays/releases
 
 #### Linux/BSD/MacOSX/POSIX - Build from Source
 
@@ -114,12 +114,12 @@ $ ./btcd
 
 ## Issue Tracker
 
-The [integrated github issue tracker](github.com/ProjectVisor/xvrd/issues)
+The [integrated github issue tracker](github.com/RaysNetwork/RAYS/issues)
 is used for this project.
 
 ## Documentation
 
-The documentation is a work-in-progress.  It is located in the [docs](github.com/ProjectVisor/xvrd/tree/master/docs) folder.
+The documentation is a work-in-progress.  It is located in the [docs](github.com/RaysNetwork/RAYS/tree/master/docs) folder.
 
 ## GPG Verification Key
 
